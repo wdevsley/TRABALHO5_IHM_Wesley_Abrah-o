@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>1. Verificação de erros no HD e desfragmentação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-tutorial="1">
+
+    <header class="topo">
+        <div class="topo-interno">
+            <a class="marca" href="index.html">Manutenção <span>&amp;</span> Suporte</a>
+            <a class="voltar" href="index.html">&larr; Todos os tutoriais</a>
+        </div>
+    </header>
+
+    <main class="conteudo">
+
+        <p class="trilha">Tutorial 1 de 5</p>
+        <h1 class="titulo">Verificação de erros no HD e desfragmentação</h1>
+        <p class="resumo">
+            O Windows tem duas ferramentas no mesmo lugar: uma procura setores com defeito no
+            disco e a outra reorganiza os arquivos espalhados para que a leitura fique mais rápida.
+        </p>
+
+        <ul class="ficha">
+            <li><strong>Sistema</strong><span>Windows 10 ou 11</span></li>
+            <li><strong>Tempo</strong><span>20 min a algumas horas</span></li>
+            <li><strong>Dificuldade</strong><span>Fácil</span></li>
+        </ul>
+
+        <div class="progresso">
+            <p class="progresso-texto">0 de 9 passos concluídos</p>
+            <div class="barra">
+                <div class="barra-preenchida"></div>
+            </div>
+        </div>
+
+        <ol class="passos">
+
+            <li class="passo">
+                <input type="checkbox" class="passo-check" id="p1">
+                <label class="passo-corpo" for="p1">
+                    <span class="passo-num" aria-hidden="true">1</span>
+                    <div>
+                        <span class="passo-titulo">Abra o Explorador de Arquivos</span>
+                        <div class="passo-texto">
+                            <p>Abra o Explorador de Arquivos (Atalho: <kbd>Win</kbd> + <kbd>E</kbd>).</p>
+                            <img src="imagens/tut1/tut1.1.png" alt="Passo 1: Abrindo o Explorador de Arquivos"
+                                class="img-tutorial">
+                            <!-- Insira sua imagem do passo 1 aqui 
+                             -->
+                        </div>
+                    </div>
+                </label>
+            </li>
+
+            <li class="passo">
+                <input type="checkbox" class="passo-check" id="p2">
+                <label class="passo-corpo" for="p2">
+                    <span class="passo-num" aria-hidden="true">2</span>
+                    <div>
+                        <span class="passo-titulo">Acesse Este Computador</span>
+                        <div class="passo-texto">
+                            <p>No menu lateral esquerdo, clique em <em>Este Computador</em>.</p>
+                            <img src="imagens/tut1/tut1.2.png" alt="Passo 1: Abrindo o Explorador de Arquivos"
+                                class="img-tutorial">
+                            <!-- Insira sua imagem do passo 2 aqui -->
+                        </div>
+                    </div>
+                </label>
+            </li>
+
+            <li class="passo">
+                <input type="checkbox" class="passo-check" id="p3">
+                <label class="passo-corpo" for="p3">
+                    <span class="passo-num" aria-hidden="true">3</span>
+                    <div>
+                        <span class="passo-titulo">Abra as Propriedades do disco</span>
+                        <div class="passo-texto">
+                            <p>Clique com o botão direito sobre o disco que deseja verificar (geralmente
+                                <code>Disco Local (C:)</code>) e selecione <em>Propriedades</em>.
+                            </p>
+                            <img src="imagens/tut1/tut1.3.png" alt="Passo 1: Abrindo o Explorador de Arquivos"
+                                class="img-tutorial">
+                            <img src="imagens/tut1/tut1.4.png" alt="Passo 1: Abrindo o Explorador de Arquivos"
+                                class="img-tutorial">
+                            <!-- Insira sua imagem do passo 3 aqui -->
+                        </div>
+                    </div>
+                </label>
+            </li>
+
+            <li class="passo">
+                <input type="checkbox" class="passo-check" id="p4">
+                <label class="passo-corpo" for="p4">
+                    <span class="passo-num" aria-hidden="true">4</span>
+                    <div>
+                        <span class="passo-titulo">Vá até a aba Ferramentas</span>
+                        <div class="passo-texto">
+                            <p>Vá até a aba <em>Ferramentas</em>.</p>
+                            <img src="imagens/tut1/tut1.5.png" alt="Passo 1: Abrindo o Explorador de Arquivos"
+                                class="img-tutorial">
+                            <!-- Insira sua imagem do passo 4 aqui -->
+                        </div>
+                    </div>
+                </label>
+            </li>
+
+            <li class="passo">
+                <input type="checkbox" class="passo-check" id="p5">
+                <label class="passo-corpo" for="p5">
+                    <span class="passo-num" aria-hidden="true">5</span>
+                    <div>
+                        <span class="passo-titulo">Inicie a Verificação de erros</span>
+                        <div class="passo-texto">
+                            <p>Na seção "Verificação de erros", clique no botão <em>Verificar</em>.</p>
+                            <img src="imagens/tut1/tut1.6.png" alt="Passo 1: Abrindo o Explorador de Arquivos"
+                                class="img-tutorial">
+                            <!-- Insira sua imagem do passo 5 aqui -->
+                        </div>
+                    </div>
+                </label>
+            </li>
+
+            <li class="passo">
+                <input type="checkbox" class="passo-check" id="p6">
+                <label class="passo-corpo" for="p6">
+                    <span class="passo-num" aria-hidden="true">6</span>
+                    <div>
+                        <span class="passo-titulo">Siga as instruções da tela</span>
+                        <div class="passo-texto">
+                            <p>Siga as instruções da tela (o Windows informará se é necessário verificar a unidade ou se
+                                pode ser feito em segundo plano).</p>
+                            <!-- Insira sua imagem do passo 6 aqui -->
+                        </div>
+                    </div>
+                </label>
+            </li>
+
+            <!-- Bloco do Desfragmentador -->
+            <li class="passo-separador"
+                style="margin: 24px 0 12px 0; font-weight: 700; color: var(--tinta); font-size: 1.1rem;">
+                Como usar o Desfragmentador (Otimização de Unidade):
+            </li>
+
+            <li class="passo">
+                <input type="checkbox" class="passo-check" id="p7">
+                <label class="passo-corpo" for="p7">
+                    <span class="passo-num" aria-hidden="true">7</span>
+                    <div>
+                        <span class="passo-titulo">Abra o Otimizador</span>
+                        <div class="passo-texto">
+                            <p>Na mesma aba "Ferramentas", clique em "Otimizar" (isso abre o desfragmentador).</p>
+                              <img src="imagens/tut1/tut1.7.png" alt="Passo 1: Abrindo o Explorador de Arquivos"
+                                class="img-tutorial">
+                            <!-- Insira sua imagem do passo 7 aqui -->
+                        </div>
+                    </div>
+                </label>
+            </li>
+
+            <li class="passo">
+                <input type="checkbox" class="passo-check" id="p8">
+                <label class="passo-corpo" for="p8">
+                    <span class="passo-num" aria-hidden="true">8</span>
+                    <div>
+                        <span class="passo-titulo">Selecione o disco e analise/otimize</span>
+                        <div class="passo-texto">
+                            <p>Selecione o disco &rarr; clique em "Otimizar" (ou "Analisar" primeiro para ver a
+                                fragmentação).</p>
+                            <!-- Insira sua imagem do passo 8 aqui -->
+                        </div>
+                    </div>
+                </label>
+            </li>
+
+            <li class="passo">
+                <input type="checkbox" class="passo-check" id="p9">
+                <label class="passo-corpo" for="p9">
+                    <span class="passo-num" aria-hidden="true">9</span>
+                    <div>
+                        <span class="passo-titulo">Aguarde a conclusão</span>
+                        <div class="passo-texto">
+                            <p>Aguarde o processo concluir e mostre a barra de progresso/resultado final.</p>
+                              <img src="imagens/tut1/tut1.8.png" alt="Passo 1: Abrindo o Explorador de Arquivos"
+                                class="img-tutorial">
+                            <!-- Insira sua imagem do passo 9 aqui -->
+                        </div>
+                    </div>
+                </label>
+            </li>
+
+        </ol>
+
+        <aside class="nota">
+            <strong>Atenção sobre SSDs</strong>
+            <p>Se o computador utilizar um SSD em vez de um HD tradicional, o Windows fará o comando TRIM no lugar da
+                desfragmentação convencional, otimizando o disco da forma correta e mais rápida.</p>
+        </aside>
+
+        <nav class="paginacao">
+            <a class="vazio" href="index.html">—</a>
+            <a href="tut2.html">Próximo: parear PC e smartphone via Bluetooth &rsaquo;</a>
+        </nav>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-interno">
+            <p>Trabalho de Manutenção e Suporte — coloque aqui seu nome, turma e o nome do professor.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

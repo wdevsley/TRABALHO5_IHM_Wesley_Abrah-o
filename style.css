@@ -1,0 +1,541 @@
+/* ==========================================================
+   Manutenção e Suporte — folha de estilo única do site
+   Estilo Moderno, Simples e Elegante
+   ========================================================== */
+
+:root {
+  --papel: #f8fafc;
+  --superficie: #ffffff;
+  --tinta: #0f172a;
+  --tinta-suave: #475569;
+  --linha: #e2e8f0;
+  --azul: #2563eb;
+  --azul-claro: #eff6ff;
+  --ambar: #d97706;
+  --ambar-claro: #fef3c7;
+  --raio: 12px;
+  --largura: 760px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family:
+    "Plus Jakarta Sans",
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+code,
+kbd {
+  font-family: "JetBrains Mono", "Consolas", monospace;
+  font-size: 0.88em;
+}
+
+kbd {
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  border-bottom-width: 2px;
+  border-radius: 6px;
+  padding: 2px 6px;
+  white-space: nowrap;
+}
+
+code {
+  background: var(--azul-claro);
+  color: var(--azul);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+a {
+  color: var(--azul);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+:focus-visible {
+  outline: 2px solid var(--azul);
+  outline-offset: 3px;
+}
+
+/* ---------- barra superior ---------- */
+
+.topo {
+  background: var(--superficie);
+  border-bottom: 1px solid var(--linha);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+}
+
+.topo-interno {
+  max-width: var(--largura);
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.marca {
+  color: var(--tinta);
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+}
+
+.marca span {
+  color: var(--azul);
+}
+
+.topo-interno a.voltar {
+  color: var(--tinta-suave);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.topo-interno a.voltar:hover {
+  color: var(--tinta);
+  text-decoration: none;
+}
+
+/* ---------- estrutura ---------- */
+
+.conteudo {
+  max-width: var(--largura);
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+/* ---------- capa da página inicial ---------- */
+
+.capa {
+  margin-bottom: 40px;
+}
+
+.capa h1 {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  margin: 0 0 16px;
+  color: var(--tinta);
+}
+
+.capa p {
+  margin: 0;
+  max-width: 60ch;
+  color: var(--tinta-suave);
+  font-size: 1.05rem;
+}
+
+.regua {
+  height: 4px;
+  width: 48px;
+  background: var(--azul);
+  border-radius: 2px;
+  margin: 0 0 20px;
+}
+
+/* ---------- lista de tutoriais (cartões elegantes) ---------- */
+
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cartao {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 24px;
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s ease;
+}
+
+.cartao:hover {
+  border-color: #cbd5e1;
+  box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.05),
+    0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+.cartao-num {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--azul);
+  background: var(--azul-claro);
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cartao-info {
+  flex: 1;
+}
+
+.cartao h2 {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--tinta);
+  line-height: 1.4;
+}
+
+.cartao p {
+  margin: 0 0 14px;
+  color: var(--tinta-suave);
+  font-size: 0.95rem;
+}
+
+.etiquetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.etiqueta {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--tinta-suave);
+  border: 1px solid var(--linha);
+  background: var(--papel);
+  border-radius: 6px;
+  padding: 3px 10px;
+}
+
+.selo-ok {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #047857;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: 6px;
+  padding: 3px 10px;
+}
+
+.selo-ok[hidden] {
+  display: none;
+}
+
+/* ---------- cabeçalho do tutorial ---------- */
+
+.trilha {
+  margin: 0 0 8px;
+  color: var(--tinta-suave);
+  font-size: 0.9rem;
+}
+
+.titulo {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: var(--tinta);
+}
+
+.resumo {
+  margin: 0 0 24px;
+  font-size: 1.05rem;
+  color: var(--tinta-suave);
+}
+
+.ficha {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 32px;
+  margin: 0 0 32px;
+  padding: 16px 20px;
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  font-size: 0.9rem;
+}
+
+.ficha strong {
+  display: block;
+  font-weight: 600;
+  color: var(--tinta);
+}
+
+.ficha span {
+  color: var(--tinta-suave);
+}
+
+/* ---------- progresso ---------- */
+
+.progresso {
+  margin: 0 0 32px;
+}
+
+.progresso-texto {
+  font-size: 0.9rem;
+  color: var(--tinta-suave);
+  margin: 0 0 8px;
+  font-weight: 500;
+}
+
+.barra {
+  height: 8px;
+  background: var(--linha);
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.barra-preenchida {
+  height: 100%;
+  width: 0;
+  background: var(--azul);
+  border-radius: 100px;
+  transition: width 0.3s ease;
+}
+
+/* ---------- passos ---------- */
+
+.passos {
+  list-style: none;
+  margin: 0 0 40px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.passo {
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.passo::before {
+  display: none;
+} /* Remove linha vertical antiga */
+
+.passo-check {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.passo-corpo {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 16px;
+  padding: 20px;
+  cursor: pointer;
+  align-items: flex-start;
+}
+
+.passo-num {
+  grid-row: span 2;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  color: var(--tinta);
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.passo-titulo {
+  display: block;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+  color: var(--tinta);
+}
+
+.passo-texto {
+  color: var(--tinta-suave);
+  font-size: 0.95rem;
+}
+.passo-texto p {
+  margin: 0;
+}
+
+.passo-check:checked + .passo-corpo .passo-num {
+  background: var(--azul);
+  border-color: var(--azul);
+  color: transparent;
+}
+
+.passo-check:checked + .passo-corpo .passo-num::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.passo-check:checked + .passo-corpo .passo-titulo {
+  color: var(--tinta-suave);
+  text-decoration: line-through;
+}
+
+.passo-check:checked ~ .passo,
+.passo:has(.passo-check:checked) {
+  border-color: #cbd5e1;
+  background: #fafafa;
+}
+
+/* ---------- nota de atenção ---------- */
+
+.nota {
+  background: var(--ambar-claro);
+  border: 1px solid #fde68a;
+  border-left: 4px solid var(--ambar);
+  border-radius: var(--raio);
+  padding: 18px 20px;
+  margin: 0 0 40px;
+  font-size: 0.95rem;
+  color: #92400e;
+}
+
+.nota strong {
+  color: #b45309;
+  display: block;
+  margin-bottom: 4px;
+}
+.nota p {
+  margin: 0;
+}
+
+/* ---------- navegação entre tutoriais ---------- */
+
+.paginacao {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid var(--linha);
+  padding-top: 24px;
+}
+
+.paginacao a {
+  text-decoration: none;
+  color: var(--azul);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+}
+
+.paginacao a:hover {
+  background: var(--azul-clarg, #f1f5f9);
+  text-decoration: none;
+}
+
+.paginacao .vazio {
+  visibility: hidden;
+}
+
+/* ---------- rodapé ---------- */
+
+.rodape {
+  border-top: 1px solid var(--linha);
+  background: var(--superficie);
+}
+
+.rodape-interno {
+  max-width: var(--largura);
+  margin: 0 auto;
+  padding: 24px;
+  color: var(--tinta-suave);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.rodape-interno p {
+  margin: 0;
+}
+
+/* ---------- telas pequenas ---------- */
+
+@media (max-width: 520px) {
+  .conteudo {
+    padding: 32px 16px 56px;
+  }
+  .cartao {
+    padding: 18px;
+    gap: 14px;
+  }
+  .cartao-num {
+    width: 32px;
+    height: 32px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Estilo refinado para as imagens dos tutoriais - Sem cortes */
+.img-tutorial {
+  display: block;
+  width: 100%;
+  max-width: 100%; /* Ocupa toda a largura disponível do passo */
+  height: auto; /* Mantém a proporção original exata da imagem */
+  margin-top: 14px;
+  border-radius: 8px;
+  border: 1px solid var(--linha);
+  background-color: var(--papel);
+  object-fit: contain;
+}
+
+/* Opcional: Efeito de zoom suave ao passar o mouse para facilitar a leitura */
+.img-tutorial:hover {
+  cursor: zoom-in;
+}
